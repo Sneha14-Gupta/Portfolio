@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* height: 100vh; */
+}
+#canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  background-image: radial-gradient(#ff3cac 0%, #784ba0 40%, #2b86c5 100%);
+  /* background-color: black; */
+  /* background-size: cover; */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(280deg);
+  }
+}
+.rotate-slow {
+  animation: spin 2s linear infinite; /* Slower rotation */
+}
+.rotate-fast {
+  animation: spin 1s linear infinite; /* Faster rotation */
+}
